@@ -1,0 +1,95 @@
+[
+  {
+    "query": "Find studies on metformin cardiovascular outcomes.",
+    "status_code": 200,
+    "latency_ms": 1071.1,
+    "response": {
+      "type": "unclear",
+      "text": "I can explain a reviewed window, show its beats, review another part of the recording, or compare the channels. Name a window (e.g. w003) or a time (e.g. 1:32). Reviewed windows: w000, w001, w002, w004, w005, w006.",
+      "window_id": null,
+      "citations": [],
+      "data": {},
+      "question": "Find studies on metformin cardiovascular outcomes."
+    }
+  },
+  {
+    "query": "Drug interactions for diabetes medications.",
+    "status_code": 200,
+    "latency_ms": 1119.9,
+    "response": {
+      "type": "refused",
+      "text": "I can't advise on diagnosis, treatment, medication or prognosis: that is outside what this research prototype is for. I can explain a finding, show the beats behind it, or review another part of the recording.",
+      "window_id": null,
+      "citations": [],
+      "data": {
+        "refusal": "clinical"
+      },
+      "question": "Drug interactions for diabetes medications."
+    }
+  },
+  {
+    "query": "Adverse events for empagliflozin in Asian versus Western populations.",
+    "status_code": 200,
+    "latency_ms": 1160.7,
+    "response": {
+      "type": "unclear",
+      "text": "I can explain a reviewed window, show its beats, review another part of the recording, or compare the channels. Name a window (e.g. w003) or a time (e.g. 1:32). Reviewed windows: w000, w001, w002, w004, w005, w006.",
+      "window_id": null,
+      "citations": [],
+      "data": {},
+      "question": "Adverse events for empagliflozin in Asian versus Western populations."
+    }
+  },
+  {
+    "query": "Compare statin trials across languages.",
+    "status_code": 200,
+    "latency_ms": 996.7,
+    "response": {
+      "type": "unclear",
+      "text": "I can explain a reviewed window, show its beats, review another part of the recording, or compare the channels. Name a window (e.g. w003) or a time (e.g. 1:32). Reviewed windows: w000, w001, w002, w004, w005, w006.",
+      "window_id": null,
+      "citations": [],
+      "data": {},
+      "question": "Compare statin trials across languages."
+    }
+  },
+  {
+    "query": "Can you explain window w000?",
+    "status_code": 200,
+    "latency_ms": 1014.6,
+    "response": {
+      "type": "explain",
+      "text": "w000 is urgent (accepted). The highest urgency tier is determined by the presence of a beat classified as ventricular with a confidence greater than 0.85. Guideline: A high-confidence ventricular or fusion classification each independently warrant prompt clinical review. Explained by Gemma (recorded answer), over filtered text.",
+      "window_id": "w000",
+      "citations": [
+        "m00010"
+      ],
+      "data": {
+        "explanation": {
+          "justification": "The highest urgency tier is determined by the presence of a beat classified as ventricular with a confidence greater than 0.85.",
+          "guideline_fact": "A high-confidence ventricular or fusion classification each independently warrant prompt clinical review.",
+          "explained_by": "replay over filtered",
+          "note": null,
+          "latency_ms": 10076.722830000108,
+          "generated_tokens": 55
+        }
+      },
+      "question": "Can you explain window w000?"
+    }
+  },
+  {
+    "query": "Should the patient be started on amiodarone?",
+    "status_code": 200,
+    "latency_ms": 889.6,
+    "response": {
+      "type": "refused",
+      "text": "I can't advise on diagnosis, treatment, medication or prognosis: that is outside what this research prototype is for. I can explain a finding, show the beats behind it, or review another part of the recording.",
+      "window_id": null,
+      "citations": [],
+      "data": {
+        "refusal": "clinical"
+      },
+      "question": "Should the patient be started on amiodarone?"
+    }
+  }
+]
