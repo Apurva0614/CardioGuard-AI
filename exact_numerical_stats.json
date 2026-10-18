@@ -1,0 +1,27 @@
+{
+  "total_beats": 517,
+  "classes": {
+    "F": 9,
+    "V": 140,
+    "N": 368
+  },
+  "mean_sqi": 0.886,
+  "noise_median": 0.0004,
+  "flat_frac": 0.0,
+  "q_frac": 0.0,
+  "mean_confidence": 0.9591819284332689,
+  "min_confidence": 0.487762,
+  "max_confidence": 0.998033,
+  "total_windows_generated": 11,
+  "total_windows_triaged": 6,
+  "triaged_window_ids": [
+    "w000",
+    "w001",
+    "w002",
+    "w004",
+    "w005",
+    "w006"
+  ],
+  "audit_records_count": 54,
+  "total_steps": 126
+}

@@ -1,0 +1,44 @@
+{
+  "edge_cases": {
+    "missing_record_status": 404,
+    "malformed_param_status": 422,
+    "clipped_fault_status": "unreadable",
+    "clipped_fault_error": "recording unreadable: flat or clipped signal (quality index 0.214); 99% unclassifiable beats"
+  },
+  "performance": [
+    {
+      "record": "100",
+      "run_id": "48214794690f",
+      "status": "complete",
+      "tier": "priority",
+      "windows_triaged_count": 6,
+      "window_ids": [
+        "w000",
+        "w001",
+        "w002",
+        "w003",
+        "w004",
+        "w006"
+      ],
+      "total_time_s": 2.42,
+      "ms_per_window": 403.1
+    },
+    {
+      "record": "233",
+      "run_id": "ac4d40da1dcc",
+      "status": "complete",
+      "tier": "urgent",
+      "windows_triaged_count": 6,
+      "window_ids": [
+        "w000",
+        "w001",
+        "w002",
+        "w004",
+        "w005",
+        "w006"
+      ],
+      "total_time_s": 5.11,
+      "ms_per_window": 852.0
+    }
+  ]
+}
