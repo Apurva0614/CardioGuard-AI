@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARDIOGUARD — Demo Gallery</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --accent: #ef4444;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      padding: 2.5rem 1.5rem;
+      line-height: 1.5;
+    }
+    header {
+      max-width: 1280px;
+      margin: 0 auto 2.5rem auto;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+    .grid {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.75rem;
+    }
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    }
+    .thumbnail-wrapper {
+      width: 100%;
+      height: 220px;
+      background-color: #0b1120;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .thumbnail-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .card:hover .thumbnail-wrapper img {
+      transform: scale(1.03);
+    }
+    .card-content {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .filename {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.85rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .card-desc {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      flex-grow: 1;
+      margin-bottom: 1rem;
+    }
+    .view-link {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--text-main);
+      background-color: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-align: center;
+      transition: background-color 0.2s ease;
+    }
+    .view-link:hover {
+      background-color: var(--primary);
+      color: #0f172a;
+    }
+    footer {
+      max-width: 1280px;
+      margin: 3.5rem auto 1rem auto;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CARDIOGUARD — Demo Gallery</h1>
+    <p class="subtitle">Complete screenshot evidence and verification of CARDIOGUARD application views, multi-agent orchestration, and guardrail safeguards.</p>
+  </header>
+
+  <main class="grid">
+    <!-- 01_home.png -->
+    <div class="card">
+      <a href="01_home.png" target="_blank" class="thumbnail-wrapper">
+        <img src="01_home.png" alt="CARDIOGUARD application homepage and clinical worklist">
+      </a>
+      <div class="card-content">
+        <span class="filename">shots/01_home.png</span>
+        <h2 class="card-title">Clinical Worklist Homepage</h2>
+        <p class="card-desc">The CARDIOGUARD dashboard displaying patient recordings ranked by clinical urgency (unreadable first, urgent, priority, routine) with MIT-BIH status badges.</p>
+        <a href="01_home.png" target="_blank" class="view-link">View Full Size &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 02_study_search.png -->
+    <div class="card">
+      <a href="02_study_search.png" target="_blank" class="thumbnail-wrapper">
+        <img src="02_study_search.png" alt="ECG Signal and Beat Annotation View">
+      </a>
+      <div class="card-content">
+        <span class="filename">shots/02_study_search.png</span>
+        <h2 class="card-title">ECG Signal & Beat Annotations</h2>
+        <p class="card-desc">Interactive zoomable ECG waveform chart with color-coded window tier bands and perception agent beat markings (N, S, V, F, Q) verified against cardiologist annotations.</p>
+        <a href="02_study_search.png" target="_blank" class="view-link">View Full Size &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 03_drug_interactions.png -->
+    <div class="card">
+      <a href="03_drug_interactions.png" target="_blank" class="thumbnail-wrapper">
+        <img src="03_drug_interactions.png" alt="Clinician Q&A and Safety Guardrails">
+      </a>
+      <div class="card-content">
+        <span class="filename">shots/03_drug_interactions.png</span>
+        <h2 class="card-title">Clinician Q&A & Safety Guardrails</h2>
+        <p class="card-desc">Clinician query interface demonstrating deterministic safety guardrail refusals for medical advice and medication questions before reaching the language model.</p>
+        <a href="03_drug_interactions.png" target="_blank" class="view-link">View Full Size &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 04_adverse_events.png -->
+    <div class="card">
+      <a href="04_adverse_events.png" target="_blank" class="thumbnail-wrapper">
+        <img src="04_adverse_events.png" alt="Stress Scenarios and Signal Fault Handling">
+      </a>
+      <div class="card-content">
+        <span class="filename">shots/04_adverse_events.png</span>
+        <h2 class="card-title">Stress Scenarios & Fault Tolerance</h2>
+        <p class="card-desc">Simulation interface for adverse signal events (noise bursts, clipping, electrode disconnects) showing how perception agent routes damaged signals to human review.</p>
+        <a href="04_adverse_events.png" target="_blank" class="view-link">View Full Size &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 05_trial_comparison.png -->
+    <div class="card">
+      <a href="05_trial_comparison.png" target="_blank" class="thumbnail-wrapper">
+        <img src="05_trial_comparison.png" alt="Adapter vs Filtered Text Channel Comparison">
+      </a>
+      <div class="card-content">
+        <span class="filename">shots/05_trial_comparison.png</span>
+        <h2 class="card-title">Adapter vs Text Comparison</h2>
+        <p class="card-desc">Quantitative benchmarking tab evaluating prompt tokens, latency, and GPU energy between learned virtual-token vectors and filtered text representations.</p>
+        <a href="05_trial_comparison.png" target="_blank" class="view-link">View Full Size &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 06_graph_view.png -->
+    <div class="card">
+      <a href="06_graph_view.png" target="_blank" class="thumbnail-wrapper">
+        <img src="06_graph_view.png" alt="Audit Trail Decision Log">
+      </a>
+      <div class="card-content">
+        <span class="filename">shots/06_graph_view.png</span>
+        <h2 class="card-title">Audit Trail & Multi-Agent Log</h2>
+        <p class="card-desc">Complete orchestrator audit trail showing every inter-agent message, intent, channel verification, vector sha256 checksums, and clinician triage overrides.</p>
+        <a href="06_graph_view.png" target="_blank" class="view-link">View Full Size &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 07_analytics.png -->
+    <div class="card">
+      <a href="07_analytics.png" target="_blank" class="thumbnail-wrapper">
+        <img src="07_analytics.png" alt="Findings Analytics and Explanations">
+      </a>
+      <div class="card-content">
+        <span class="filename">shots/07_analytics.png</span>
+        <h2 class="card-title">Findings Analytics & Explanations</h2>
+        <p class="card-desc">Window-by-window analysis with clinical guidelines, classification justifications, source labels (live/replay/rule), and clinician override capability.</p>
+        <a href="07_analytics.png" target="_blank" class="view-link">View Full Size &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 08_agent_trace.png -->
+    <div class="card">
+      <a href="08_agent_trace.png" target="_blank" class="thumbnail-wrapper">
+        <img src="08_agent_trace.png" alt="Execution Agent Trace Log">
+      </a>
+      <div class="card-content">
+        <span class="filename">shots/08_agent_trace.png</span>
+        <h2 class="card-title">Agent Execution Trace</h2>
+        <p class="card-desc">Detailed chronological execution trace showing typed messages, intent verification, orchestrator safety checks, planning decisions, and timestamped actions.</p>
+        <a href="08_agent_trace.png" target="_blank" class="view-link">View Full Size &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>CARDIOGUARD &bull; Research prototype &bull; MIT-BIH Arrhythmia Dataset &bull; Clean Clinical Interface</p>
+  </footer>
+</body>
+</html>
